@@ -5,6 +5,7 @@ This code created to use features of Tramp/SmartAudio on VTX (like switching pow
 VTXControl works in two modes/protocols - SmartAudio and Tramp, communications with VTX established by software serial port (SoftwareSerialWithHalfDuplex).
 This code had been tested on Eachine TX5258 (SmartAudio v2 protocol) and JHEMCU RuiBet Tran3016W (Tramp protocol) VTXes, so that's not an universal solution for your own VTX (just because your VTX can have manufacturer's own Tramp/SmartAudio protocol implementation).
 This code doesn't support PitMode and GetTemperature features, but you can add these features on your own.
+Please review **powers** and **freqs** arrays definitions in VTXControl.cpp to apply/modify values provided by your VTX.
 A simplest creation of VTXControl instance example:
 //for SmartAudio mode
 VTXControl* vtx;
